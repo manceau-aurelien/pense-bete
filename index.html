@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pense-bête</title>
+  <meta name="description" content="Un petit carnet de notes.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f4ecd8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>📒</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script src="carnet.js" defer></script>
+</head>
+<body>
+  <aside>
+    <header><h1>Pense-bête</h1><button id="nouvelle" type="button">+ Note</button></header>
+    <input id="chercher" type="search" placeholder="Chercher…" aria-label="Chercher dans les notes" autocomplete="off" autocapitalize="off">
+    <ul id="liste"></ul>
+  </aside>
+  <main>
+    <div class="outils"><button id="retour" type="button">‹ Notes</button><small id="quand"></small><button id="effacer" type="button">Supprimer</button></div>
+    <input id="titre" placeholder="Titre" aria-label="Titre" autocomplete="off">
+    <textarea id="texte" placeholder="Écrire ici…" aria-label="Note"></textarea>
+  </main>
+</body>
+</html>
